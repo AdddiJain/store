@@ -265,7 +265,12 @@ header a{
     width: 280px;
   }
 }
-
+@media (max-width:560px) and (min-width:100px){
+    .hood-left img{
+    width: 200px;
+  }
+}
+    
 
 
 
