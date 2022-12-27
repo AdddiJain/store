@@ -267,12 +267,22 @@ header a{
 }
 @media (max-width:610px) and (min-width:560px){
     .hood-left img{
-    width: 310px;
+    width: 320px;
   }
 }
-@media (max-width:560px) and (min-width:100px){
+@media (max-width:560px) and (min-width:400px){
     .hood-left img{
-    width: 300px;
+    width: 320px;
+  }
+}
+@media (max-width:400px) and (min-width:300px){
+    .hood-left img{
+    width: 220px;
+  }
+}
+@media (max-width:300px) and (min-width:100px){
+    .hood-left img{
+    width: 120px;
   }
 }
 
