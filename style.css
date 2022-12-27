@@ -270,19 +270,14 @@ header a{
     width: 320px;
   }
 }
-@media (max-width:560px) and (min-width:400px){
+@media (max-width:560px) and (min-width:300px){
     .hood-left img{
     width: 320px;
   }
 }
-@media (max-width:400px) and (min-width:300px){
-    .hood-left img{
-    width: 220px;
-  }
-}
 @media (max-width:300px) and (min-width:100px){
     .hood-left img{
-    width: 120px;
+    width: 180px;
   }
 }
 
