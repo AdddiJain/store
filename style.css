@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+:root{
+  --primary-text-color: #ECE8DD;
+  --primary-background-color: #142857;
+  --secondary-background-color: #040f2a;
+}
+
+
+
+
+
+
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5%;
+    background-color: var(--primary-background-color);
+    width: 100%;
+    position: relative;
+}
+header img{
+    width: 180px;
+}
+header li{
+    list-style: none;
+    display: inline-block;
+}
+header li:hover{
+    text-decoration: underline;
+    transition: all 0.5s ease-in-out;
+}
+header li{
+    color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 19px;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+header a::before{
+  color: var(--primary-text-color);
+}
+header a:visited{
+  color: var(--primary-text-color);
+}
+header a::after{
+  color: var(--primary-text-color);
+}
+@media (max-width:1600px) and (min-width:885px) {
+    .menu-btn{
+        display: none;
+    }
+}
+input[type="checkbox"] {
+    display: none;
+  }
+  @media (max-width: 1000px) {
+    nav {
+      padding: 0 40px 0 50px;
+    }
+  }
+  @media (max-width: 885px) {
+    nav .menu-btn i {
+      display: block;
+      color: var(--primary-text-color);
+    }
+  
+    #click:checked~.menu-btn i::before {
+      content: "\f01b";
+      color: var(--primary-text-color);
+    }
+  
+    nav ul {
+      position: fixed;
+      top: 60px;
+      left: -100%;
+      background: var(--primary-background-color);
+      height: auto;
+      width: 100%;
+      text-align: center;
+      display: block;
+      transition: all 0.3s ease;
+      z-index: 1;
+    }
+  
+    #click:checked~ul {
+      left: 0;
+      color: var(--primary-text-color);
+    }
+  
+    nav ul li {
+      width: 100%;
+      margin: 8px 0;
+    }
+  
+    nav ul li a {
+      width: 100%;
+      margin-left: -100%;
+      display: block;
+      font-size: 20px;
+      transition: 0.1s linear;
+    }
+  
+    #click:checked~ul li a {
+      margin-left: 0px;
+    }
+  
+    nav ul li a.active,
+    nav ul li a:hover {
+      background: none;
+      color: var(--primary-text-color);
+    }
+  }
+
+
+
+.section2 video{
+    width: 100%;
+}
+header a{
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+.video2{
+    display: none;
+}
+@media (max-width:1180px) and (min-width:780px) {
+    .row{
+        gap: 10px;
+        align-items: center;
+        align-content: center;
+        vertical-align: middle;
+        margin: auto;
+    }
+}
+@media (max-width:830px) and (min-width:100px) {
+    .video1{
+        display: none;
+    }
+    .video2{
+        display: block;
+    }
+}
+
+.section2{
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+.section3{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    justify-content: space-around;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.box{
+    height: 560px;
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-text-color);
+    padding: 20px;
+    padding-bottom: 30px;
+    position: relative;
+    box-shadow: 0px 0px 0px 2px var(--primary-background-color);
+    border-radius: 30px;
+}
+.box img{
+  padding-bottom: 20px;
+}
+.blue-text{
+  font-size: 12px;
+  color: rgb(71, 187, 241);
+}
+.quality{
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.name{
+  font-size: 20px;
+  font-weight: 400;
+}
+.dilivery{
+  font-size: 12px;
+}
+.discount{
+  font-size: 20px;
+}
+.price{
+  color: rgb(241, 135, 73);
+  font-size: 26px;
+}
+.section3 img{
+    width: 300px;
+}
+.inner{
+    position: absolute;
+    display: none;
+    top: 18px;
+    left: 20px;
+}
+.box:hover .inner{
+    display: block;
+    transition: all 20s;
+}
+
+
+
+.section5{
+  text-align: center;
+  color: var(--primary-text-color);
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  margin: 10px;
+  padding: 10px;
+}
+.logo{
+  display: flex;
+}
+.section5 img{
+  width: 200px;
+}
+
+
+.hoodie{
+  margin: 20px;
+  padding: 20px;
+}
+.hoodi{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.hoodie p{
+  color: rgb(241, 135, 73);
+}
+.hood-left{
+  display: flex;
+  flex-wrap: wrap;
+}
+.hood-right h2{
+  padding-bottom: 10px;
+}
+.hood-left img{
+  width: 450px;
+}
+.hood-right{
+  width: 100%;
+  /* padding-left: 15px;
+  padding-right: 15px; */
+  margin: 20px;
+  color: var(--primary-text-color);
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+.span2{
+  font-size: 15px;
+  color: var(--primary-text-color);
+}
+.hood-right h1{
+  margin-top: 70px;
+  font-size: 45px;
+}
+.span1{
+  font-size: 50px;
+}
+@media (max-width:1250px) and (min-width:100px){
+  .hoodie{
+    margin: 10px;
+    padding: 10px;
+  }
+  .hoodi{
+    gap: 20px;
+  }
+}
+@media (max-width:950px) and (min-width:750px){
+  .hood-left img{
+    width: 350px;
+  }
+}
+@media (max-width:750px) and (min-width:610px){
+  .hood-left img{
+    width: 320px;
+  }
+}
+@media (max-width:610px) and (min-width:560px){
+  .hood-left img{
+  width: 320px;
+}
+}
+@media (max-width:560px) and (min-width:300px){
+  .hood-left img{
+  width: 320px;
+}
+}
+@media (max-width:300px) and (min-width:100px){
+  .hood-left img{
+  width: 180px;
+}
+}
+
+
+
+
+
+footer {
+  width: 100%;
+  text-align: center;
+  background-color: var(--primary-background-color);
+  padding: 4px;
+  color: var(--primary-text-color);
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+footer a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+footer a:visited {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+.col-1 {
+  padding-top: 10px;
+}
+
+.col-2 {
+  padding-top: 10px;
+}
+.col-2 img{
+  width: 120px;
+}
+.col-3 {
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
