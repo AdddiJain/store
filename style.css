@@ -16,32 +16,36 @@
 
 
 
-
+.section1{
+  height: 40px;
+}
 header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 5%;
     background-color: var(--primary-background-color);
     width: 100%;
-    position: relative;
+    position: fixed;
+    padding-left: 20px;
+    padding-right: 10px;
+    z-index: 1;
 }
 header img{
-    width: 180px;
+    width: 160px;
 }
 header li{
     list-style: none;
-    display: inline-block;
+    display: inline;
 }
 header li:hover{
     text-decoration: underline;
-    transition: all 0.5s ease-in-out;
+    transition: all 2s ease-in-out;
 }
 header li{
     color: var(--primary-text-color);
     font-weight: 400;
-    font-size: 19px;
+    font-size: 16px;
     padding: 10px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -54,7 +58,7 @@ header a:visited{
 header a::after{
   color: var(--primary-text-color);
 }
-@media (max-width:1600px) and (min-width:885px) {
+@media (max-width:1600px) and (min-width:950px) {
     .menu-btn{
         display: none;
     }
@@ -62,12 +66,12 @@ header a::after{
 input[type="checkbox"] {
     display: none;
   }
-  @media (max-width: 1000px) {
+  /* @media (max-width: 1000px) {
     nav {
       padding: 0 40px 0 50px;
     }
-  }
-  @media (max-width: 885px) {
+  } */
+  @media (max-width: 950px) {
     nav .menu-btn i {
       display: block;
       color: var(--primary-text-color);
